@@ -10,15 +10,17 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 
 ## **Resources**
 
-* Data Sources: [INCLUDE LINKS]
+* Data Sources: 
+  * https://github.com/ireneshin26/MechaCar_Statistical_Analysis/blob/main/Resources/MechaCar_mpg.csv
+  * https://github.com/ireneshin26/MechaCar_Statistical_Analysis/blob/main/Resources/Suspension_Coil.csv
 * Languages: R
 
 ****
 
 ## **Deliverable 1: Linear Regression to Predict MPG**
 **Background:** The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. These metrics are the independent variables. MPG is the dependent variable. Utilizing R, a linear model that predicts the mpg of MechaCar prototypes was created.
-
-[ ADD SCREENSHOT ] 
+ 
+<img width="825" alt="D1_LinearRegression" src="https://user-images.githubusercontent.com/110875578/203673799-2741b2d7-ee0d-4c0b-9d8e-bfdee6e540ef.png">
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?** >> *Vehicle Length and Ground Clearance are statistically significant*
 
@@ -30,9 +32,12 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 ## **Deliverable 2: Summary Statistics on Suspension Coils**
 **Background:** The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using R, a summary statistics table was created showing the following: 
 
-The suspension coil’s PSI continuous variable across all manufacturing lots:  [INSERT PIC]
+The suspension coil’s PSI continuous variable across all manufacturing lots: 
 
-The following PSI metrics for each lot: mean, median, variance, and standard deviation:  [INSERT PIC]
+<img width="335" alt="D2_SuspensionCoilSummary" src="https://user-images.githubusercontent.com/110875578/203673857-a9302ff2-1810-4490-806e-c6d8f11d2a8d.png">
+
+The following PSI metrics for each lot: mean, median, variance, and standard deviation:  
+<img width="489" alt="D2_LotSummary" src="https://user-images.githubusercontent.com/110875578/203673844-9254ec4b-5c97-4a4c-beee-f0c3678283fd.png">
 
 **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 
@@ -45,7 +50,7 @@ The following PSI metrics for each lot: mean, median, variance, and standard dev
 ## **Deliverable 3: T-Tests on Suspension Coils**
 **Background:** T-tests were performed to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
-[INSERT PIC]
+<img width="573" alt="D3_T-Test" src="https://user-images.githubusercontent.com/110875578/203673903-1ef86904-127a-4de6-ae4c-952f4cca19d2.png">
 
 * All Manufacturing Lots: The PSI is not statistically different from the populaton mean of 1500 lbs due to the P-value of 0.06028, which is higher than 0.05 indicating to maintain the null hypothesis. 
 * Individual Lots: PSI values for Lots 1 and 2 are not statistically different since both exhibit higher than 0.05 p values -  Lot 1 (p=1), Lot 2 (p=0.6072). The PSI value for Lot 3 (p=0.04168) however is less than the 0.05 p value showing that it is statistially different and indicates strong evidence to reject the null hypothesis.
